@@ -7,11 +7,11 @@ from langchain.agents import initialize_agent, AgentType, Tool
 
 os.environ[
     "SERPAPI_API_KEY"
-] = "c8c67651978e5d3bb3cf305931d3a9506f4ece0a7948dd73afce9ce75f825655"
-# os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
+] = "<your-api-key>"
 
+openai_api = "<your-api-key>"
 llm = ChatOpenAI(
-    openai_api_key="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",
+    openai_api_key=openai_api,
     temperature=0.9,
     model_name="gpt-4",
 )
